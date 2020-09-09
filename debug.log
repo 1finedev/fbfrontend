@@ -1,0 +1,6 @@
+[0620/223844.920:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0620/223844.998:ERROR:exception_snapshot_win.cc(98)] thread ID 13680 not found in process
+[0801/205508.857:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0801/205509.075:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0801/205509.075:ERROR:process_memory_win.cc(39)] Failed to initialize ProcessInfo.
+[0801/205509.132:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)

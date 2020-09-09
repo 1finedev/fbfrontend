@@ -1,0 +1,296 @@
+/* FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Numans&family=Patrick+Hand&family=Righteous&display=swap');
+
+/* Tag Styles */
+body {
+  background-color: white;
+}
+
+link {
+  text-decoration: none;
+}
+
+/* Header Styles */
+.topnavcenter {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.top_header_area {
+  background: #111f29;
+}
+
+.top_header_area .top_nav span a {
+  font: 400 14px/50px 'Roboto', sans-serif;
+  color: #fff;
+  padding: 0;
+  text-decoration: none;
+  text-align: justify;
+}
+
+.top_header_area .top_nav span a i {
+  color: #ffc312;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.top_header_area .top_nav span a:hover,
+.top_header_area .top_nav span a:focus {
+  background-color: transparent;
+  color: #ffc312;
+}
+
+.top_header_area .top_nav span:first-child a {
+  padding: 0;
+}
+
+.navbar {
+  font-family: 'Fredoka One', cursive;
+}
+
+/* Error Page Styles */
+.errorpage {
+  margin: 20px;
+}
+
+.errhead {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.heading1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Righteous', cursive;
+}
+
+.errtxt {
+  font-family: 'Patrick Hand', cursive;
+  margin-left: 8vw;
+}
+
+.bluebutton {
+  display: inline-block;
+  margin-right: 10px;
+  background: #339dff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 38px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 170px;
+  text-align: center;
+}
+
+.bluebutton:hover {
+  background: #fff;
+  color: #339dff;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+  text-decoration: none;
+}
+
+/* Profile Stylesd */
+span {
+  font-weight: bold;
+  color: black;
+}
+
+.analyhead {
+  font-family: 'Fredoka One', cursive;
+}
+
+.profileanalytics {
+  font-weight: bold;
+  text-align: center;
+}
+
+.inner {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 8px #ffc312, inset 0 0 8px #ffc312;
+  margin-bottom: 40px;
+  animation: pulse 2s linear 1s infinite;
+  -webkit-animation: pulse 2s linear 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+  }
+
+  50% {
+    box-shadow: 0 0 16px #ea4c89, inset 0 0 14px #ea4c89;
+  }
+
+  100% {
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+  }
+
+  50% {
+    box-shadow: 0 0 16px #ea4c89, inset 0 0 14px #ea4c89;
+  }
+
+  100% {
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+  }
+}
+
+.inner .analcircle {
+  /* display: block; */
+  text-align: center;
+  line-height: 100px;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #000000;
+  text-shadow: 0 0 4px #fff;
+}
+
+.topanalcenter {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+/* Media Query */
+@media (max-width: 767px) {
+  .topnavcenter {
+    display: inline-block;
+    text-align: left;
+    margin-right: 25%;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  .top_header_area .top_nav span {
+    display: inline-block;
+  }
+
+  .top_header_area .top_nav span a {
+    line-height: 28px;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wrap {
+  text-align: center;
+
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+/* Sec Css */
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.tcabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.allship {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.addshipment {
+  min-width: 35%;
+  flex-basis: content;
+}
+
+.addshipment2 {
+  max-width: 90%;
+  flex-basis: content;
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .addshipment {
+    min-width: 90%;
+  }
+}
+
+.forgot {
+  max-width: 70%;
+}
+
+.searchpane {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flextrack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 70%;
+  align-content: center;
+}
+
+.after-slide {
+  margin-top: 10vh;
+}
+
+.slide {
+  margin: auto;
+}
+
+/* Track styles*/
+.td1 {
+  color: #111f29
+}
+
+.td2 {
+  color: #111f29
+}
+
+.multiship {
+  margin-bottom: 20px;
+}
+
+.tracking {
+  display: flex;
+  justify-content: center;
+}
+
+.flextrack {
+  max-width: 75%;
+}
+
+.tabs {
+  justify-content: center;
+  background-color: #FFC312;
+}
+
+.buttonGen {
+  margin-bottom: 20px;
+}
