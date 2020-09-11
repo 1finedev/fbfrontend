@@ -53,7 +53,7 @@ const Header = (...props) => {
 
   const nliHeader = () => {
     return (
-      <>
+      <div className="app-header">
         <section className="top_header_area">
           <div className="container top_nav">
             <div className="topnavcenter">
@@ -123,7 +123,7 @@ const Header = (...props) => {
             </NavbarText>
           </Collapse>
         </Navbar>
-      </>
+      </div>
     );
   };
 

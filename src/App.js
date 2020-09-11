@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 import Home from './components/home/Home';
 import NotFound from './components/utils/NotFound';
@@ -23,12 +23,11 @@ import TrackAndTrace from './components/homepage/TrackAndTrace';
 
 import { ProtectedRoute } from './components/utils/ProtectedRoute';
 import AuthProvider from './context/AuthContext';
-import ShipmentProvider from './context/ShipmentContext';
 
 function App() {
+
   return (
     <AuthProvider>
-      <ShipmentProvider>
         <Router>
           <Header />
           <Switch>
@@ -52,7 +51,6 @@ function App() {
             <Route component={NotFound} />
           </Switch>
         </Router>
-      </ShipmentProvider>
     </AuthProvider>
   );
 }
