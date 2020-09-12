@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from '../images/hero-img.gif'
+import HeroImage from '../../assets/home-images/hero-img.gif'
 import { Globe } from 'react-feather'
 
 function Hero() {

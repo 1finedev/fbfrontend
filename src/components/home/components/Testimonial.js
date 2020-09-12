@@ -1,5 +1,5 @@
 import React from 'react'
-import PersonImage from '../images/person.jpg'
+import PersonImage from '../../assets/home-images/person.jpg'
 
 function Testimonial() {
     return (

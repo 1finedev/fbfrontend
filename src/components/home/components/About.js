@@ -1,6 +1,5 @@
 import React from 'react'
 import { Globe, Zap, Cpu } from 'react-feather'
-// import moduleName from 'react-'
 
 function About() {
     return (

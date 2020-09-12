@@ -1,5 +1,5 @@
 import React from 'react'
-import AirplaneImage from '../images/airplane.png'
+import AirplaneImage from '../../assets/home-images/airplane.png'
 
 function HIW() {
     return (
