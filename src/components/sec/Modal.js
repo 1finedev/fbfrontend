@@ -3,6 +3,7 @@ import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { useForm } from 'react-hook-form';
 import { ShipmentContext } from './../../context/ShipmentContext';
 import ShipmentService from './../../services/ShipmentService';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ModalShip = props => {
   const [error, setError] = useState(false);

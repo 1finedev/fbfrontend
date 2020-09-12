@@ -4,6 +4,7 @@ import ShipmentService from './../../services/ShipmentService';
 import { AuthContext } from '../../context/AuthContext';
 import classnames from 'classnames';
 import startOfWeek from 'date-fns/startOfWeek';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   TabContent,
   TabPane,

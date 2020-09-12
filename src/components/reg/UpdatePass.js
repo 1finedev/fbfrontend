@@ -3,6 +3,7 @@ import { Jumbotron } from 'reactstrap';
 import { useForm } from 'react-hook-form';
 import AuthService from './../../services/AuthService';
 import { AuthContext } from '../../context/AuthContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const UpdatePass = props => {
   const authContext = useContext(AuthContext);

@@ -14,15 +14,13 @@ const Home = () => {
   document.body.classList.remove("log");
   
   useEffect(() => {
-    const appHeader = document.querySelector(".app-header");
-    appHeader.remove();
     window.AOS.init({
         duration: 1000
     });
   }, []);
 
   return (
-    <div>
+    <div className="fb-landing">
       <Header />
       <Hero />
       <About />

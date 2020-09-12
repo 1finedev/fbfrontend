@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Table } from 'reactstrap';
 import { AuthContext } from '../../context/AuthContext';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TrackResults = props => {
   let validUser = false;

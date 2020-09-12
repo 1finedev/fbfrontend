@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Jumbotron } from 'reactstrap';
 import { useForm } from 'react-hook-form';
 import AuthService from './../../services/AuthService';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ForgotPass = () => {
   const { handleSubmit, register, errors } = useForm();

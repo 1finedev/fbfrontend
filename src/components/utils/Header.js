@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import AuthService from './../../services/AuthService';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   Collapse,

@@ -25,11 +25,14 @@ import { ProtectedRoute } from './components/utils/ProtectedRoute';
 import AuthProvider from './context/AuthContext';
 
 function App() {
-
+  const currentLocation = window.location.pathname;
+  // console.log(currentLocation)
   return (
     <AuthProvider>
         <Router>
-          <Header />
+          {
+            currentLocation === "/" ? null : <Header />
+          }
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/user/resetPassword/+:token" component={UpdatePass} />

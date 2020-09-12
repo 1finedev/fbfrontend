@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import ModalShip from './Modal';
 import startOfWeek from 'date-fns/startOfWeek';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   TabContent,
   TabPane,
