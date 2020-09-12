@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Tooltip } from 'reactstrap';
 import { AuthContext } from './../../context/AuthContext';
 import AuthService from './../../services/AuthService';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Login = props => {
   const toggle = () => setTooltipOpen(!tooltipOpen);

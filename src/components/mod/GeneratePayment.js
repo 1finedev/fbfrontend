@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { ShipmentContext } from './../../context/ShipmentContext';
 import ShipmentService from './../../services/ShipmentService';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const GeneratePayment = () => {
   const { handleSubmit, register, errors, reset } = useForm();

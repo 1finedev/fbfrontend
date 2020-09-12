@@ -4,38 +4,35 @@ import { Globe, Zap, Cpu } from 'react-feather'
 
 function About() {
     return (
-        <section class="fb-landing__about" id="about">
-            <h2 class="fb-landing__heading" data-aos="fade-down">
+        <section className="fb-landing__about" id="about">
+            <h2 className="fb-landing__heading" data-aos="fade-down">
                 Why Fortè bridge
             </h2>
 
-            <div class="fb-landing__about__cards">
-                <article class="fb-landing__about__card"data-aos="fade-right">
-                    <div class="fb-landing__about__card__icon">
-                        {/* <i data-feather="globe"></i> */}
+            <div className="fb-landing__about__cards">
+                <article className="fb-landing__about__card"data-aos="fade-right">
+                    <div className="fb-landing__about__card__icon">
                         <Globe className="feather" />
                     </div>
-                    <h4 class="fb-landing__about__card__title ">World wide shipping</h4>
+                    <h4 className="fb-landing__about__card__title ">World wide shipping</h4>
                     <p>
                         We ship worldwide to any country in the world, location doesn’t hinder our efficiency
                     </p>
                 </article>
-                <article class="fb-landing__about__card" data-aos="fade" data-aos-duration="2000">
-                    <div class="fb-landing__about__card__icon">
-                        {/* <i data-feather="zap"></i> */}
+                <article className="fb-landing__about__card" data-aos="fade" data-aos-duration="2000">
+                    <div className="fb-landing__about__card__icon">
                         <Zap className="feather" />
                     </div>
-                    <h4 class="fb-landing__about__card__title">Fast shipping</h4>
+                    <h4 className="fb-landing__about__card__title">Fast shipping</h4>
                     <p>
                         Our shipping speed top notch, you can get your goods within 7 days of posting
                     </p>
                 </article>
-                <article class="fb-landing__about__card" data-aos="fade-left">
-                    <div class="fb-landing__about__card__icon">
-                        {/* <i data-feather="cpu"></i> */}
+                <article className="fb-landing__about__card" data-aos="fade-left">
+                    <div className="fb-landing__about__card__icon">
                         <Cpu className="feather" />
                     </div>
-                    <h4 class="fb-landing__about__card__title">World wide shipping</h4>
+                    <h4 className="fb-landing__about__card__title">World wide shipping</h4>
                     <p>
                         You can always track where your goods are and automatically get notified when it arrives
                     </p>

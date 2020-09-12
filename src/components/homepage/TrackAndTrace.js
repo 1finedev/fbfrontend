@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import ShipmentService from '../../services/ShipmentService';
 import Spinner from '../utils/Spinner';
 import TrackResults from './TrackResults';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TrackAndTrace = props => {
   const [results, setResults] = useState(null);

@@ -6,6 +6,7 @@ import SearchShipments from './../utils/SearchShipments';
 import GeneratePayment from './GeneratePayment';
 import { saveAs } from 'file-saver';
 import { Progress } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ModShipment = () => {
   const { Messages, shipments } = useContext(ShipmentContext);

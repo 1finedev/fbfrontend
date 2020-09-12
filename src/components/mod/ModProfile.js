@@ -11,6 +11,7 @@ import { AuthContext } from '../../context/AuthContext';
 import { ShipmentContext } from '../../context/ShipmentContext';
 import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ModProfile = props => {
   const { user } = useContext(AuthContext);

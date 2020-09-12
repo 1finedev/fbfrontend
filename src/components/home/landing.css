@@ -1,39 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 h1 {
-  font-size: 4rem;
-  font-weight: 700;
+  font-size: 4rem !important;
+  font-weight: 700 !important;
   text-transform: uppercase; }
   @media screen and (max-width: 650px) {
     h1 {
-      font-size: 3rem; } }
+      font-size: 3rem !important; } }
 
 h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
+  font-size: 2.8rem !important;
+  font-weight: 700 !important;
   text-transform: uppercase; }
   @media screen and (max-width: 650px) {
     h2 {
-      font-size: 2rem; } }
+      font-size: 2rem !important; } }
 
 h3 {
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 2.2rem !important;
+  font-weight: 500 !important;
   text-transform: capitalize; }
   @media screen and (max-width: 650px) {
     h3 {
-      font-size: 1.8rem; } }
+      font-size: 1.8rem !important; } }
 
 h4 {
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
   text-transform: capitalize; }
   @media screen and (max-width: 650px) {
     h4 {
-      font-size: 1.6rem; } }
+      font-size: 1.6rem !important; } }
 
 h5 {
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
   text-transform: capitalize; }
 
 * {
@@ -50,17 +50,25 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Rubik', sans-serif !important;
-  color: #6C7C83; }
+  color: #6C7C83 !important; }
 
 ul {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .feather {
   width: 2rem;
   height: 2rem; }
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0 !important; }
+
+span {
+  font-weight: 300 !important;
+  color: inherit !important; }
 
 @media screen and (max-width: 650px) {
   .hide-sm {
@@ -90,7 +98,7 @@ a {
     color: #F4F4F4; }
     .fb-btn--accent:hover {
       color: #fff;
-      box-shadow: 0 3px 25px rgba(242, 185, 46, 0.15); }
+      box-shadow: 0 5px 30px rgba(242, 185, 46, 0.25); }
 
 .fb-nav__checkbox {
   display: none; }
@@ -315,7 +323,7 @@ a {
     padding: .5rem;
     border-radius: 1rem;
     background: #fff;
-    box-shadow: 0 3px 25px rgba(242, 185, 46, 0.1);
+    box-shadow: 0 3px 25px rgba(242, 185, 46, 0.15);
     display: flex;
     align-items: center;
     border: solid 1px #F4F4F4;
@@ -533,13 +541,3 @@ a {
   .fb-landing__test__card h5 {
     color: #04435B;
     margin-top: 1rem; }
-
-    dl, ol, ul {
-      margin-top: 0;
-      margin-bottom: 0 !important;
-  }
-
-  span {
-    font-weight: 300 !important;
-    color: inherit !important;
-}

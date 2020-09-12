@@ -6,6 +6,7 @@ import AdminProfile from '../admin/AdminProfile';
 import SecProfile from '../sec/SecProfile';
 import ModProfile from '../mod/ModProfile';
 import { Spinner } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Profile = props => {
   const { role, isSuper } = useContext(AuthContext);

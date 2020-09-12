@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { ShipmentContext } from '../../context/ShipmentContext';
 import ShipmentService from '../../services/ShipmentService';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const SearchShipments = () => {
   const shipmentContext = useContext(ShipmentContext);
