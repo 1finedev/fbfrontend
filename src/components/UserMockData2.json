@@ -1,0 +1,15 @@
+// EXAMPLE USER SERVER RESPONSE 
+
+{
+    "status": "success",
+    "data": {
+        "user": {
+            "role": "user",
+            "_id": "5efa728fhd98ca63650530149",
+            "name": "Bayo Emmanuel O.",
+            "email": "emma.bay@gmail.com",
+            "agentID": "fb117",
+        },
+        "isAuthenticated": true
+    }
+}

@@ -1,0 +1,119 @@
+// EXAMPLE SHIPMENT RESPONSE DATA
+
+{
+    "status": "success",
+    "results": 3,
+    "data": {
+        "data": [{
+            "mobile": null,
+            "shipstatus": "✈️ IN TRANSIT",
+            "action": "🚚",
+            "shipType": "Mix & Merge",
+            "paymentStatus": "Unpaid",
+            "freight": 7144,
+            "customs": 3000,
+            "amountDue": 10144,
+            "shipMode": "✈️ Air Freight",
+            "locked": true,
+            "_id": "5f743a42c672ed001790b31d",
+            "name": "bt appareal",
+            "destination": "lagos",
+            "weight": 4,
+            "carton": 37,
+            "user": {
+                "_id": "5efe728fd98ca636503630149",
+                "agentID": "fb11"
+            },
+            "shipcode": "ry9rchb8D",
+            "createdAt": "2020-09-30T07:56:50.405Z"
+        }, {
+            "mobile": null,
+            "shipstatus": "✈️ IN TRANSIT",
+            "action": "🚚",
+            "shipType": "Mix & Merge",
+            "paymentStatus": "Unpaid",
+            "freight": 25004,
+            "customs": 10500,
+            "amountDue": 35504,
+            "shipMode": "✈️ Air Freight",
+            "locked": true,
+            "_id": "5f733fe2c01b790017df7524",
+            "name": "vera",
+            "destination": "lagos",
+            "weight": 14,
+            "carton": 22,
+            "user": {
+                "_id": "5efe728fd98ca63650330149",
+                "agentID": "fb11"
+            },
+            "shipcode": "r191lpxIw",
+            "createdAt": "2020-09-29T14:08:34.089Z"
+        }, {
+            "mobile": 8105812026,
+            "shipstatus": "✈️ IN TRANSIT",
+            "action": "🚚",
+            "shipType": "Single",
+            "paymentStatus": "Unpaid",
+            "freight": 16074,
+            "customs": 6750,
+            "amountDue": 22824,
+            "shipMode": "✈️ Air Freight",
+            "locked": true,
+            "_id": "5f733bb7c01b790017df7509",
+            "name": "anita",
+            "destination": "Lagos",
+            "weight": 9,
+            "carton": 38,
+            "user": {
+                "_id": "5efe728fd98ca63650330149",
+                "agentID": "fb11"
+            },
+            "shipcode": "ryJpiheIw",
+            "createdAt": "2020-09-29T13:50:47.190Z"
+        }, {
+            "mobile": null,
+            "shipstatus": "✈️ IN TRANSIT",
+            "action": "🚚",
+            "shipType": "Single",
+            "paymentStatus": "Unpaid",
+            "freight": 3572,
+            "customs": 1500,
+            "amountDue": 5072,
+            "shipMode": "✈️ Air Freight",
+            "locked": true,
+            "_id": "5f732cdbc01b790017df74e1",
+            "name": "gbemi",
+            "destination": "Lagos",
+            "weight": 2,
+            "carton": 17,
+            "user": {
+                "_id": "5efe728fd98ca63650330149",
+                "agentID": "fb11"
+            },
+            "shipcode": "ry7JTjg8D",
+            "createdAt": "2020-09-29T12:47:23.251Z"
+        }, {
+            "mobile": null,
+            "shipstatus": "✈️ IN TRANSIT",
+            "action": "🚚",
+            "shipType": "Single",
+            "paymentStatus": "Unpaid",
+            "freight": 125020,
+            "customs": 52500,
+            "amountDue": 177520,
+            "shipMode": "✈️ Air Freight",
+            "locked": true,
+            "_id": "5f73297cc01b790017df74c4",
+            "name": "mrs zainab",
+            "destination": "Abuja",
+            "weight": 70,
+            "carton": 12,
+            "user": {
+                "_id": "5efe728fd98ca63650330149",
+                "agentID": "fb11"
+            },
+            "shipcode": "HygBKtilLD",
+            "createdAt": "2020-09-29T12:33:00.798Z"
+        }]
+    }
+}
