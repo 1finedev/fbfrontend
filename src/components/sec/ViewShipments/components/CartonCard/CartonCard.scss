@@ -1,24 +1,27 @@
 .carton-card{
-    width: calc(50% - 20px);
+    width: calc(50% - 14px);
     min-height: 120px;;
+    cursor: pointer;
     display: inline-block;
     background: white;
     border-radius: 12px;
-    margin: 10px;
+    margin: 7px;
     margin-bottom: 15px;
     box-shadow: 1px 1px 5px grey;
 
     &.active{
         border: 3px solid #FFCC48;
+        background: #867f6e9c;
     }
 
     .carton-number-section{
         display: flex;
         align-items: center;
-        padding: 10px;
+        justify-content: space-between;
+        padding: 7px;
 
         .carton-number-title{
-            font-size: 18px;
+            font-size: 17px;
         }
 
         .number-container{
@@ -26,7 +29,7 @@
             background: #867F6E;
             border-radius: 5px;
 
-            h3{
+            h4{
                 margin: 0;
                 color: white;
             }
@@ -51,11 +54,40 @@
             font-size: 14px;
         }
 
+        .detail-title{
+            font-size: 13px;
+        }
+
         .card-shipments-details{
             width: 50%;
             border-right: 1px solid rgba(255, 255, 255, 0.548);
         }
     }
+}
 
+@media only screen and (max-width: 1090px){
+    .carton-card{
+        margin: 5px;
+        width: calc(50% - 10px);
+    }
+}
 
+@media only screen and (max-width: 800px){
+    .carton-card{
+        margin: 12.5px;
+        width: calc(100% - 25px);
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .carton-card{
+        margin: 10px;
+        min-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .carton-card{
+        margin: 5px;
+    }
 }
