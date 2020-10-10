@@ -1,0 +1,22 @@
+.view-shipments{
+
+    .main-section{
+        min-height: 100vh;
+        display: flex;
+
+        .cartons-section{
+            width: 30%;
+            background: #EAEAEA;
+            min-height: 100vh;
+            display: inline-block;
+            align-items: center;
+        }
+
+        .shipments-section{
+            width: 70%;
+            height: 100vh;
+            background: blue;
+            display: inline-block;
+        }
+    }
+}
