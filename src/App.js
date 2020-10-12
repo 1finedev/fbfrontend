@@ -23,38 +23,40 @@ import TrackAndTrace from './components/homepage/TrackAndTrace';
 
 import { ProtectedRoute } from './components/utils/ProtectedRoute';
 import AuthProvider from './context/AuthContext';
+import ViewShipments from './components/sec/ViewShipments/ViewShipments';
 
 function App() {
   const currentLocation = window.location.pathname;
   // console.log(currentLocation)
   return (
-    <AuthProvider>
-        <Router>
-          {
-            currentLocation === "/" ? null : <Header />
-          }
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/user/resetPassword/+:token" component={UpdatePass} />
-            <Route path="/register" component={Register} />
-            <Route path="/login" component={Login} />
-            <Route path="/forgot-password" component={ForgotPass} />
-            <Route path="/tracktrace" component={TrackAndTrace} />
-            <ProtectedRoute path="/profile" component={Profile} />
-            <ProtectedRoute path="/agent" component={UserProfile} />
-            <ProtectedRoute path="/ModShipment" component={ModShipment} />
-            <ProtectedRoute path="/admin" component={AdminProfile} />
-            <ProtectedRoute path="/shipment" component={Shipment} />
-            <ProtectedRoute path="/track&trace" component={TrackTrace} />
-            <ProtectedRoute path="/payment" component={Payment} />
-            <ProtectedRoute path="/account" component={Account} />
-            <ProtectedRoute path="/contact" component={Contact} />
-            <ProtectedRoute path="/customers" component={Customers} />
-            <ProtectedRoute path="/AddShipment" component={AddShipment} />
-            <Route component={NotFound} />
-          </Switch>
-        </Router>
-    </AuthProvider>
+    <ViewShipments/>
+    // <AuthProvider>
+    //     <Router>
+    //       {
+    //         currentLocation === "/" ? null : <Header />
+    //       }
+    //       <Switch>
+    //         <Route exact path="/" component={Home} />
+    //         <Route path="/user/resetPassword/+:token" component={UpdatePass} />
+    //         <Route path="/register" component={Register} />
+    //         <Route path="/login" component={Login} />
+    //         <Route path="/forgot-password" component={ForgotPass} />
+    //         <Route path="/tracktrace" component={TrackAndTrace} />
+    //         <ProtectedRoute path="/profile" component={Profile} />
+    //         <ProtectedRoute path="/agent" component={UserProfile} />
+    //         <ProtectedRoute path="/ModShipment" component={ModShipment} />
+    //         <ProtectedRoute path="/admin" component={AdminProfile} />
+    //         <ProtectedRoute path="/shipment" component={Shipment} />
+    //         <ProtectedRoute path="/track&trace" component={TrackTrace} />
+    //         <ProtectedRoute path="/payment" component={Payment} />
+    //         <ProtectedRoute path="/account" component={Account} />
+    //         <ProtectedRoute path="/contact" component={Contact} />
+    //         <ProtectedRoute path="/customers" component={Customers} />
+    //         <ProtectedRoute path="/AddShipment" component={AddShipment} />
+    //         <Route component={NotFound} />
+    //       </Switch>
+    //     </Router>
+    // </AuthProvider>
   );
 }
 

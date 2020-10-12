@@ -1,29 +1,134 @@
 .view-shipments{
     position: relative;
+    font-size: .85rem !important;
+    background: #EAEAEA;
 
     .header-section{
-        height: 200px;
         background: #EAEAEA;
+        margin: 10px 0;;
+
+        .options-section{
+            min-height: 70px;
+            background: #4D6170;
+            display: flex;
+            align-items: center;
+            padding: 0 2%;
+            justify-content: space-between;
+
+            .selects-container{
+                display: flex;
+
+                .selection-set{
+                    display: flex;
+                    margin-left: 7%;
+                    align-items: center;
+
+                    &:first-child{
+                        margin-left: 0;
+                    }
+
+                    p{
+                        margin: 0;
+                        font-size: 17px;
+                        color: white;
+                    }
+                    
+                    select.options{
+                        color: white;
+                        border-color: white;
+                        padding: 3px 10px;
+                        border-radius: 5px;
+                        margin-left: 10px;
+                        background: transparent;
+
+                    }
+                }
+            }
+
+            .search-section{
+                display: flex;
+
+                .input-container{
+                    position: relative;
+
+                    input{
+                        height: 30px;
+                        padding: 7px;
+                        width: 250px;
+                        border-radius: 5px;
+                        border: none;
+                    }
+
+                    .search-icon-container{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;;
+
+                        svg{
+                            height: 50%;
+                        }
+                    }
+                }
+
+                select{
+                    margin-left: 20px;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .summary-section{
+            text-align: center;
+            padding: 10px 0;
+            h5{
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            p{
+                margin: 0;
+                font-size: 16px;
+                margin-bottom: 3px;
+            }
+        }
         
     }
     .main-section{
-        height: 100vh;
         display: flex;
-        border-top: 2px solid rgba(0, 0, 0, 0.0703);
         background: #EAEAEA;
         position: sticky;
         top: 0;
 
         .title-section{
             position: sticky;
+            z-index: 10;
             top: 0;
             left: 0;
-            background: #EAEAEA;
+            background: white;
             padding: 10px 7px;
-            // box-shadow: 1px 2px 5px grey;
             border-bottom: 5px solid #EAEAEA;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 60px;
 
-            // border-radius: 10px 10px 0 0;
+            h5{
+                font-weight: 900;
+
+                div{
+                    display: inline;
+                }
+            }
+            h5, p{
+                margin: 0;
+            }
+
+            p{
+                font-size: 17px;
+            }
         }
 
         .cartons-section{
@@ -31,13 +136,16 @@
             display: inline-block;
             align-items: center;
             overflow-y: scroll;
-            height: 100%;
-            position: relative;
+            height: 100vh;
+            position: sticky;
+            background: #EAEAEA;
+            z-index: 100;
+            top: 0;
         }
 
         .shipments-section{
             width: 73%;
-            height: 100vh;
+            min-height: 100vh;
             display: inline-block;
             padding: 10px;
             padding-top: 0;
@@ -45,8 +153,41 @@
             .shipment-table{
                 border-radius: 10px;
                 width: 100%;
-                height: 90%;
-                background: white;;
+                background: white;
+                overflow-x: scroll;
+                box-shadow: 1px 2px 15px grey;
+                margin-top: 10px;
+
+
+
+                tr{
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.071);
+
+                    &:nth-child(odd){
+                        background: #EEEEEE;
+                    }
+                }
+
+                th, td{
+                    padding: 15px 5px;
+                    text-align: center;
+                    border:1px solid rgba(128, 128, 128, 0.26);
+                }
+
+                th{
+                    border-top: 0px;
+                    background-color: #4D6170;
+                    color: rgba(255, 255, 255, 0.779);
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    position: sticky;
+                    top: 0;
+                    border-color: rgba(0, 0, 0, 0.099);
+                }
+
+                table{
+                    width: 100%;
+                }
             }
         }
     }
@@ -54,7 +195,20 @@
 
 @media only screen and (max-width: 1090px){
     .view-shipments{
-        
+        .header-section{
+            .options-section{
+                display: block;
+                .selects-container{
+                    justify-content: center;
+                    padding: 20px 0;
+                }
+
+                .search-section{
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+            }
+        }
 
         .main-section{
 
@@ -98,6 +252,12 @@
                 width: 20%;
                 min-width: 170px;
                 flex: initial;
+
+                .title-section{
+                    p{
+                        display: none;
+                    }
+                }
             }
             
             .shipments-section{
@@ -114,6 +274,18 @@
         .main-section{
             display: block;
 
+            .title-section{
+                top: 151px;
+
+                h5{
+                    div{
+                        padding: 0 10px;
+                        display: block;
+                        line-height: 18px;
+                    }
+                }
+            }
+
             .cartons-section{
                 width: 100%;
                 height: fit-content;
@@ -121,7 +293,8 @@
             }
             
             .shipments-section{
-                width: 100%;;
+                width: 100%;
+
             }
         }
     }

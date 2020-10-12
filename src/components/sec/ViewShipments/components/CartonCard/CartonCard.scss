@@ -1,6 +1,6 @@
 .carton-card{
     width: calc(50% - 14px);
-    min-height: 120px;;
+    min-height: 110px;;
     cursor: pointer;
     display: inline-block;
     background: white;
@@ -10,8 +10,14 @@
     box-shadow: 1px 1px 5px grey;
 
     &.active{
-        border: 3px solid #FFCC48;
-        background: #867f6e9c;
+        border: 3px solid #4D6170;
+        background: #4D61709c;
+
+        .carton-number-section{
+            .carton-number-title{
+                color: white;
+            }
+        }
     }
 
     .carton-number-section{
@@ -21,12 +27,13 @@
         padding: 7px;
 
         .carton-number-title{
-            font-size: 17px;
+            font-size: 15px;
+
         }
 
         .number-container{
             padding: 5px 10px;
-            background: #867F6E;
+            background: #4D6170;
             border-radius: 5px;
 
             h4{
@@ -39,7 +46,7 @@
     .details-section{
         display: flex;
         justify-content: space-between;
-        background: #867F6E;
+        background: #4D6170;
         border-radius: 8px;
 
         div{
@@ -55,7 +62,7 @@
         }
 
         .detail-title{
-            font-size: 13px;
+            font-size: 11px;
         }
 
         .card-shipments-details{
