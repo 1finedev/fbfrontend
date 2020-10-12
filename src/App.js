@@ -23,11 +23,13 @@ import TrackAndTrace from './components/homepage/TrackAndTrace';
 
 import { ProtectedRoute } from './components/utils/ProtectedRoute';
 import AuthProvider from './context/AuthContext';
+import ViewShipments from './components/sec/ViewShipments/ViewShipments';
 
 function App() {
   const currentLocation = window.location.pathname;
   // console.log(currentLocation)
   return (
+    // <ViewShipments/>
     <AuthProvider>
         <Router>
           {
