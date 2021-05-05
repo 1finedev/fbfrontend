@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.4",
     "@testing-library/user-event": "^10.1.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "date-fns": "^2.15.0",
     "file-saver": "^2.0.2",
